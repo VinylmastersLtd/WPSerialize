@@ -1,0 +1,88 @@
+/* Container styles */
+#sn-form-container {
+    max-width: 1400px; /* Set maximum width */
+    margin: 20px auto; /* Center the container horizontally with a margin */
+    padding: 0px; /* Remove padding */
+}
+
+/* Form styles */
+#sn-serial-number-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    gap: 20px; /* Add spacing between form elements */
+}
+
+/* Input and button styles */
+#sn-serial-number-form input[type='text'],
+#sn-serial-number-form button {
+    padding: 8px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Enhancing the focus state for serial number input */
+#sn-serial-number-form input[type='text']:focus {
+    border-color: #e75151; /* Red border on focus */
+    border-width: 2px; /* Thicker border for emphasis */
+    outline: none; /* Removing default outline to rely on border styling */
+}
+
+/* Search results container styles */
+#sn-search-results {
+    margin-top: 20px; /* Add top margin */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Result item styles */
+.sn-result-item {
+    margin-bottom: 10px; /* Add bottom margin */
+}
+.sn-result-item label {
+    font-weight: bold; /* Bold label text */
+}
+
+/* Skeleton loader styles */
+.loader {
+    width: 100%; /* Full width */
+    height: 40px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* Position relative for absolute positioning */
+    overflow: hidden; /* Hide overflow */
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+.loading-text {
+    position: absolute; /* Position absolute */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    font-size: 14px; /* Adjust font size */
+    color: #488572; /* Text color */
+    font-weight: bold; /* Bold text */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: slide-left 2s linear infinite; /* Text animation */
+}
+
+/* Text animation keyframes */
+@keyframes slide-left {
+    0% { transform: translateX(100%); }
+	100% { transform: tr}
+
+		
+.valid-message {
+    color: #40826D; /* Color for valid message */
+}
+
+.expired-message {
+    color: #721C23; /* Color for expired message */
+}
+	
+.sn-meta-field .serial-data {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #000;
+}
+
+
